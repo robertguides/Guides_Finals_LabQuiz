@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wow"
+    tools:context="com.example.guides.guides_finals_labquiz.MainActivity">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/TXT1"
+    android:text="FAMOUS QUOTES"
+    android:layout_centerHorizontal="true"
+    android:textSize="20dp"
+    android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TXT2"
+        android:layout_below="@id/TXT1"
+        android:text="AUTHOR: "
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/TXT2"
+        android:id="@+id/EDT1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TXT3"
+        android:layout_below="@id/EDT1"
+        android:text="QUOTE: "
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/TXT3"
+        android:id="@+id/EDT2"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EDT2"
+        android:id="@+id/BTN1"
+        android:text="Save"
+        android:onClick="saveMessage"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@id/TXT2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EDT2"
+        android:id="@+id/BTN2"
+        android:onClick="Next"
+        android:text="Next"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/BTN1"
+        android:layout_marginLeft="125dp"/>
+
+
+</RelativeLayout>
